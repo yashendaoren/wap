@@ -1,0 +1,2 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["chunk-2d0a2d18"],{"0013":function(n,e,t){"use strict";t.r(e);var o=function(){var n=this,e=n.$createElement,t=n._self._c||e;return t("div",{staticClass:"commonuse"},[t("ul",n._l(n.commonList,function(e,o){return t("li",{key:o},[n._v("\n          "+n._s(e)+"\n      ")])}),0)])},u=[],s={name:"commonuse",data(){return{commonList:["zhang","wang","li","zhou","wu","zheng"]}}},a=s,c=t("2877"),i=Object(c["a"])(a,o,u,!1,null,"2d933893",null);e["default"]=i.exports}}]);
+//# sourceMappingURL=chunk-2d0a2d18.019a5c3d.js.map

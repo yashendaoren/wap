@@ -29,12 +29,45 @@
     </ul>
   </div>
 </template>
+/**
+传值 bool string number
+传引用 array object 一处改变 所有地方都会变
+this.$emit('functionName',value) 子向父级传值 v-on:functionName = 'realName(value)'
+ */
 
 <script>
 export default {
   name: 'HelloWorld',
   props: {
-    msg: String
+    msg: String,
+    list:{
+      type:Array,
+      required:false
+    }
+  },
+  beforeCreate(){
+
+  },
+  created(){
+
+  },
+  beforeMount(){
+
+  },
+  mounted(){
+    //页面显示
+  },
+  beforeUpdate(){
+
+  },
+  updated(){
+    //页面显示
+  },
+  beforeDestroy(){
+
+  },
+  destroyed(){
+
   }
 }
 </script>
