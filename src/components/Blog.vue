@@ -1,9 +1,11 @@
 <template>
   <div class="blog">
-    <input type="text" v-model="search" placeholder="search">
+    <input type="text" v-model="search" placeholder="关键词搜索">
       <ul>
-        <li v-for='(blog,index) in filteredBlogs' :key="index">
-            {{blog}}
+        <li v-for='(item,index) in filteredBlogs' :key="index">
+            <a target="_blank" :href="item.address" >
+              <div>{{item.name}}</div>              
+          </a>
         </li>
       </ul>
   </div>
@@ -14,14 +16,35 @@ export default {
   name: 'blog',
   data(){
       return{
-          blogs:['hehe','zhang','wang','li','zhou','wu','zheng'],
+          blogs:[
+            {
+              name:'常用易错css',
+              description:'常用易错CSS',
+              address:'https://jsrun.net/note/5eKKp'
+            },
+            {
+              name:'canvas简单用法',
+              description:'canvas简单用法',
+              address:'https://jsrun.net/note/SeKKp'
+            },
+            {
+              name:'jQuery入门',
+              description:'jQuery入门',
+              address:'https://jsrun.net/note/AeKKp'
+            },
+            {
+              name:'idea破解',
+              description:'idea破解码生成',
+              address:'https://blog.csdn.net/voke_/article/details/76418116'
+            }
+          ],
           search:''
       }
   },
   computed:{
     filteredBlogs:function(){
-      return this.blogs.filter((name)=>{
-        return name.match(this.search)
+      return this.blogs.filter((item)=>{
+        return item.name.match(this.search)
       })
     }
   }
@@ -30,18 +53,33 @@ export default {
 
 <style scoped>
 .blog{
-  width: 800px;
-  min-height: 800px;
-  margin: 10px auto;
+  padding: 10px;
+  background: #eef;
 }
-ul {
+ul{
+  margin: 0px auto;
+  width: 800px;
+  min-height: 500px;
   list-style: none;
 }
-input{
-  width: 80%;
-  height: 30px;
-  margin: 10px 10%;
+li{
+  border:1px solid #c1c1c1;
+  border-radius: 5px;
+  padding: 5px 10px;
+  margin: 5px 0;
+  background: #fff;
+
 }
+input{
+  width: 600px;
+  height: 30px;
+  display: block;
+  margin: 10px auto;
+  font-size: 18px;
+  border-radius: 5px;
+  padding-left: 10px;
+}
+
 
 
 </style>

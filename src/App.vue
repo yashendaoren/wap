@@ -1,7 +1,6 @@
 <template>
   <div id="app">
     <Header />
-    <img alt="Vue logo" src="./assets/logo.png">
     <NavHeader></NavHeader>
     <router-view></router-view>
     <Footer />
@@ -28,10 +27,13 @@ export default {
   padding: 0;
   margin: 0;
 }
-img{
-  margin: 10px auto;
-  display: block;
-  width: 100px;
+ul{
+  margin: 0px auto;
+  width: 1000px;
+  list-style: none;
+}
+a{
+  text-decoration: none;
 }
 
 </style>

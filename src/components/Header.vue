@@ -1,6 +1,10 @@
 <template>
   <header>
-      <div>{{title}}</div>
+    <div class="con">
+      <div class="title">1004.FUN</div>
+      <div class="setting" v-on:click='btnClick(0)'>设置</div>
+      <div class="about"  v-on:click='btnClick(1)'>关于我</div>
+    </div>
   </header>
 </template>
 
@@ -12,8 +16,16 @@ export default {
   },
   data(){
       return{
-          title:'Header'
       }
+  },
+  methods:{
+    btnClick(index){
+      if(index==0){
+        alert("Nothing!")
+      }else{
+        alert("QQ:2051735283")
+      }
+    }
   }
 }
 </script>
@@ -22,9 +34,26 @@ export default {
 <style scoped>
 header{
   width: 100%;
-  height: 50px;
-  background: burlywood;
-  text-align: center;
+  background: #607B8B;
+}
+header .con{
+  width: 1000px;
+  height: 70px;
+  margin: 0 auto;
+}
+header .con .title{
+  float: left;
+  line-height: 70px;
+  color: #fff;
+  font-size: 30px;
+  font-style: italic;
+}
+.setting,.about{
+  float: right;
+  line-height: 70px;
+  color: #fff;
+  font-size: 20px;
+  margin-left: 20px;
 }
 
 
