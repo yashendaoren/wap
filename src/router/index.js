@@ -4,9 +4,9 @@ import VueRouter from 'vue-router'
 Vue.use(VueRouter)
 
 export const routerMap = [
-    { path: '/', component: () => import('../components/Website')},
-    { path: '/commonuse', component: () => import('../components/CommonUse')},
-    { path: '/blog', component: () => import('../components/Blog')},
+    { path: '/', component: () => import('@/components/Website')},
+    { path: '/commonuse', component: () => import('@/components/CommonUse')},
+    { path: '/blog', component: () => import('@/components/Blog')},
     
 ]
 
