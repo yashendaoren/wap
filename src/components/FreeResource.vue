@@ -40,11 +40,6 @@ export default {
               address:'https://element.eleme.cn/#/zh-CN/'
             },
             {
-              name:'JSRUN',
-              description:'jsrun在线编辑器、代码库',
-              address:'https://jsrun.net'
-            },
-            {
               name:'GitHub',
               description:'github代码库',
               address:'https://github.com'

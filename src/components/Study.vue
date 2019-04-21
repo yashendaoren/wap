@@ -44,6 +44,11 @@ export default {
               name:'网易云课堂',
               description:'网易在线视频学习',
               address:'https://study.163.com'
+            },
+            {
+              name:'WePy',
+              description:'WePy 小程序开发框架',
+              address:'https://tencent.github.io/wepy/'
             }],
       }
   },

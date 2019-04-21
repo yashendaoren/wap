@@ -31,14 +31,24 @@ export default {
               address:'https://cli.im'
             },
             {
-              name:'压缩图',
+              name:'改图宝',
               description:'图片在线压缩工具',
+              address:'http://www.gaitubao.com'
+            },
+            {
+              name:'压缩图',
+              description:'修改图片尺寸，添加水印，pdf格式转换等，挺好用的',
               address:'https://www.yasuotu.com'
             },
             {
-              name:'WePy',
-              description:'WePy 小程序开发框架',
-              address:'https://tencent.github.io/wepy/'
+              name:'UZER.ME',
+              description:'ppt、excel、ps等云协作办公',
+              address:'https://uzer.me/index.html'
+            },
+            {
+              name:'JSRUN',
+              description:'jsrun在线编辑器、支持多重语言在线编辑。同时也是一个代码库',
+              address:'https://jsrun.net'
             }
           ],
       }
