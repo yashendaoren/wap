@@ -47,7 +47,7 @@ export default {
             },
             {
               name:'JSRUN',
-              description:'jsrun在线编辑器、支持多重语言在线编辑。同时也是一个代码库',
+              description:'jsrun在线编辑器、支持多重语言在线编辑。代码库',
               address:'https://jsrun.net'
             }
           ],

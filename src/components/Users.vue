@@ -1,11 +1,11 @@
 <template>
   <div class="user">
-    <input type="text" v-model="search" placeholder="search">
-      <ul>
-        <li v-for='(user,index) in filteredUsers' :key="index">
-            {{user | my-filter}}
-        </li>
-      </ul>
+    <input type="text" v-model="search" placeholder="search" />
+    <ul>
+      <li v-for='(user,index) in filteredUsers' :key="index">
+          {{user | my-filter}}
+      </li>
+    </ul>
   </div>
 </template>
 
@@ -33,11 +33,26 @@ export default {
         return name.match(this.search)
       })
     }
-
+  },
+  mounted(){
+    this.search = this.$route.query.id
   }
+  
 }
 </script>
 
 <style scoped>
+.user{
+  margin: 0 auto;
+  width: 1000px;
+  height: 500px;
+  padding-top: 10px;
+}
+input{
+  width: 800px;
+  height: 40px;
+  font-size: 20px;
+  margin: 10 auto;
+}
 
 </style>

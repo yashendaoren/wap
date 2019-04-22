@@ -28,6 +28,11 @@ export default {
               address:'https://jsrun.net/note/SeKKp'
             },
             {
+              name:'常用正则及常用js',
+              description:'常用正则及常用js',
+              address:'https://jsrun.net/note/ReKKp'
+            },
+            {
               name:'jQuery入门',
               description:'jQuery入门',
               address:'https://jsrun.net/note/AeKKp'
@@ -65,11 +70,13 @@ ul{
 li{
   border:1px solid #c1c1c1;
   border-radius: 5px;
-  padding: 5px 10px;
+  padding: 10px;
   margin: 5px 0;
   background: #fff;
-
 }
+ li a:hover{
+   color: #4e5;
+ }
 input{
   width: 600px;
   height: 30px;

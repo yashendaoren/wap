@@ -2,15 +2,18 @@
     <div class="navHeader">
       <img alt="logo" src="../assets/logo.png">
       <ul class="nav">
-        <li v-bind:class="{ active: isActive==0 }" v-on:click="liClick(0)"><router-link to='/'>常用工具</router-link></li>
+        <li v-bind:class="{ active: isActive==0 }" v-on:click="liClick(0)"><router-link to='/tools'>常用工具</router-link></li>
         <li v-bind:class="{ active: isActive==1 }" v-on:click="liClick(1)"><router-link to='/freeresource'>免费资源</router-link></li>
         <li v-bind:class="{ active: isActive==2 }" v-on:click="liClick(2)"><router-link to='/study'>在线学习</router-link></li>
         <li v-bind:class="{ active: isActive==3 }" v-on:click="liClick(3)"><router-link to='/blog'>博客</router-link></li>
+        <!-- <li v-bind:class="{ active: isActive==4 }" v-on:click="liClick(4)"><router-link to='/test'>test</router-link></li> -->
       </ul>
     </div>  
 </template>
 
 <script>
+import { confirmEnding } from '@/utils/util'
+
 export default {
   name: 'NavHeader',
   props: {
@@ -22,10 +25,24 @@ export default {
       }
   },
   mounted(){
-    this.isActive = sessionStorage.getItem('isActive') 
-    if(!this.isActive){
+    // this.isActive = sessionStorage.getItem('isActive') 
+    // if(!this.isActive){
+    //   this.isActive = 0
+    // }
+    if(location.href.match('#/tools')||confirmEnding(location.href,'#/')){
       this.isActive = 0
+    }else if(location.href.match('#/freeresource')){
+      this.isActive = 1
+    }else if(location.href.match('#/study')){
+      this.isActive = 2
+    }else if(location.href.match('#/blog')){
+      this.isActive = 3
+    }else if(location.href.match('#/test')){
+      this.isActive = 4
     }
+    // else{
+    //   this.isActive = 5
+    // }    
   },
   methods:{
     liClick(index){

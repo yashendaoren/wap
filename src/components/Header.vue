@@ -1,7 +1,7 @@
 <template>
   <header>
     <div class="con">
-      <div class="title">1004.FUN</div>
+      <div class="title"><a href="https://www.1004.fun">1004.FUN</a></div>
       <div class="setting" v-on:click='btnClick(0)'>设置</div>
       <div class="about"  v-on:click='btnClick(1)'>关于我</div>
     </div>
@@ -41,7 +41,7 @@ header .con{
   height: 70px;
   margin: 0 auto;
 }
-header .con .title{
+header .con .title,a{
   float: left;
   line-height: 70px;
   color: #fff;
@@ -54,6 +54,12 @@ header .con .title{
   color: #fff;
   font-size: 20px;
   margin-left: 20px;
+}
+.about:hover{
+  cursor: pointer;
+}
+.setting:hover{
+  cursor: pointer;
 }
 
 
