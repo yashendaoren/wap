@@ -31,14 +31,19 @@ export default {
               address:'https://cli.im'
             },
             {
-              name:'改图宝',
-              description:'图片在线压缩工具',
-              address:'http://www.gaitubao.com'
+              name:'颜色值转换',
+              description:'RGB颜色值与十六进制颜色码转换工具',
+              address:'https://www.sioe.cn/yingyong/yanse-rgb-16/'
             },
             {
               name:'压缩图',
               description:'修改图片尺寸，添加水印，pdf格式转换等，挺好用的',
               address:'https://www.yasuotu.com'
+            },
+            {
+              name:'文字符号大全',
+              description:'常用文本显示的各种符号收集',
+              address:'https://www.jianshu.com/p/3af5fa2d95b9'
             },
             {
               name:'UZER.ME',

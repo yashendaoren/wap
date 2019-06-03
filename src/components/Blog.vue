@@ -18,6 +18,11 @@ export default {
       return{
           blogs:[
             {
+              name:'常用命令',
+              description:'一段时间不用，就忘了，简单记录一下',
+              address:'https://jsrun.net/note/Drjpp'
+            },
+            {
               name:'常用易错css',
               description:'常用易错CSS',
               address:'https://jsrun.net/note/5eKKp'
